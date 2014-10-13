@@ -1,0 +1,15 @@
+language: ruby
+script: 'ruby test/sample_by_rate_test.rb'
+rvm:
+  - 1.9.3
+  - 2.0.0
+  - 2.1
+  - ruby-head
+  - rbx-2
+  - jruby
+matrix:
+  allow_failures:
+    - rvm: ruby-head
+    - rvm: rbx-2
+    - rvm: jruby
+  fast_finish: true
