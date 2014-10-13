@@ -1,4 +1,6 @@
 require 'test/unit'
+lib = File.expand_path('../../lib', __FILE__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'sample_by_rate'
 
 class TestSampleByRate < Test::Unit::TestCase
