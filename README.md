@@ -2,6 +2,13 @@
 
 Method to do sampling for `Enumerable` objects in specified rate.
 
+```ruby
+# Prints 10% of numbers in (1..100000)
+(1..100000).sample_by_rate(0.1).each do |n|
+  puts n
+end
+```
+
 ## Installation
 
 Add this line to your application's Gemfile:
